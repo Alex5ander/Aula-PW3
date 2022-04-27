@@ -1,0 +1,19 @@
+.logo {
+  color: #575757;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo svg {
+  width: 40px;
+  height: 40px;
+  color: #219ebc;
+}
+
+.logo span {
+  color: #219ebc;
+}
+
+.search {
+
+}

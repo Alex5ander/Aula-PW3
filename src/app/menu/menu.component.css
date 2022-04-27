@@ -24,3 +24,16 @@
   margin-left: -32px;
   margin-top: -4px;
 }
+
+.btn-login {
+  border: 1px solid #219ebc;
+  background-color: #fff;
+  color: #219ebc;
+  padding: 10px 65px;
+}
+
+.btn-login:hover{
+  background-color: #219ebc;
+  color: #fff;
+  transition: .3s ease-in-out;
+}

@@ -14,6 +14,13 @@
   color: #219ebc;
 }
 
-.search {
+.search input {
+  background-color: #f2f2f2;
+  padding: 8px 15px;
+  width: 350px;
+}
 
+.search svg {
+  margin-left: -32px;
+  margin-top: -4px;
 }

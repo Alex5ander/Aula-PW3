@@ -1,0 +1,40 @@
+footer {
+  background-color: #eaf2fd;
+}
+
+.logo {
+  color: #575757;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.logo svg {
+  width: 35px;
+  height: 35px;
+  color: #219ebc;
+}
+
+.logo span {
+  color: #219ebc;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin: 15px 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #555;
+}
+
+footer ul li a:hover {
+  color: #000;
+}
+
+textarea {
+  height: 90px !important;
+}

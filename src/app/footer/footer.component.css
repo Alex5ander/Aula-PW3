@@ -44,10 +44,10 @@ textarea {
   background-color: #219ebc;
   color: #fff;
   padding: 10px 65px;
+  transition: .3s ease-in-out;
 }
 
 .btn-footer:hover{
   background-color: #fff;
   color: #219ebc;
-  transition: .3s ease-in-out;
 }

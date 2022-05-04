@@ -38,3 +38,17 @@ footer ul li a:hover {
 textarea {
   height: 90px !important;
 }
+
+
+.btn-footer {
+  border: 1px solid #219ebc;
+  background-color: #219ebc;
+  color: #fff;
+  padding: 10px 65px;
+}
+
+.btn-footer:hover{
+  background-color: #fff;
+  color: #219ebc;
+  transition: .3s ease-in-out;
+}

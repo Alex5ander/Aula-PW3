@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-caixinha',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./caixinha.component.css']
 })
 export class CaixinhaComponent implements OnInit {
+
+  @Input() nomeProduto: string = '';
 
   constructor() { }
 

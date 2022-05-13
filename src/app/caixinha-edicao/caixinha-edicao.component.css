@@ -1,0 +1,12 @@
+.quadrado {
+  height: 175px;
+  width: 175px;
+  background-color: #000;
+}
+
+svg {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}

@@ -1,1 +1,45 @@
-<p>add-produto works!</p>
+<div class="bg-gray py-5 container-fluid bg-body">
+  <div class="container w-50">
+    <form>
+      <legend><h1 class="fw-bolder">Adicionar novo produto</h1></legend>
+
+      <div class="d-flex gap-1 justify-content-between mb-3 align-items-center">
+        <div class="drop-image px-5 d-flex flex-column justify-content-center">
+          <img [src]="imageURL" />
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#c8c8c8" class="bi bi-image-fill" viewBox="0 0 16 16">
+              <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
+            </svg>
+            <p>
+              Arraste para adicionar uma
+              <br>
+              imagem para o produto
+            </p>
+          </div>
+        </div>
+        <p>Ou</p>
+        <div class="btn-search-file btn rounded-0 py-3">
+          <input (change)="getImage($event)" id="input-file" hidden type="file" />
+          <label for="input-file">Procure no seu computador</label>
+        </div>
+      </div>
+
+      <div class="form-floating mb-3 text-secondary">
+        <input id="nome" class="form-control rounded-0 border-0 border-bottom" placeholder="Nome do produto"/>
+        <label for="nome">Nome do produto</label>
+      </div>
+
+      <div class="form-floating mb-3 text-secondary">
+        <input id="preco" class="form-control rounded-0 border-0 border-bottom" placeholder="Preco do produto"/>
+        <label for="preco">Preço do produto</label>
+      </div>
+
+      <div class="form-floating mb-3 text-secondary">
+        <textarea id="descricao" class="form-control rounded-0 border-0 border-bottom" placeholder="Descrição do produto"></textarea>
+        <label for="descricao">Descrição do produto</label>
+      </div>
+
+      <button class="btn-add btn btn-primary w-100 py-3 btn-bg">Adicionar produto</button>
+    </form>
+  </div>
+</div>

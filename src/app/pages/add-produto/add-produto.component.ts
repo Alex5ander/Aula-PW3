@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddProdutoComponent implements OnInit {
 
+  imageURL: string = '';
   constructor() { }
 
   ngOnInit(): void {
   }
+  
 
+  getImage(e:any) {
+    console.log(e)
+    this.imageURL = e.target.value;
+  }
 }

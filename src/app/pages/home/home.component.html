@@ -5,7 +5,7 @@
         <p class="fw-bolder">
             Produtos selecionados com até 33% de desconto
         </p>
-     
+
         <button class="btn btn-primary">Ver consoles</button>
    </div>
 </div>
@@ -17,7 +17,7 @@
     </div>
 
     <div class="d-flex justify-content-between">
-        <div *ngFor="let produto of produtos">
+        <div *ngFor="let produto of categorias">
             <app-caixinha nomeProduto="{{produto}}" ></app-caixinha>
         </div>
     </div>

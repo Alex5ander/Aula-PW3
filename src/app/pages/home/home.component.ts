@@ -1,3 +1,5 @@
+import { Categoria } from './../../interface/categoria';
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,20 +7,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
 
-  produtos: string[] = [
-    'Produto 1',
-    'Produto 2',
-    'Produto 3',
-    'Produto 4',
-    'Produto 5',
-    'Produto 6'
-  ];
-
-  constructor() { }
+  categorias: Categoria[] = [];
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+   // this.http.get("http://www.lucasreno.kinghost.net/loja/home").subscribe()
   }
 
 }

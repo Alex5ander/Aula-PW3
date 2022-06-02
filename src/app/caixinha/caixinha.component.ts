@@ -1,3 +1,4 @@
+import { Produto } from './../interface/produto';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CaixinhaComponent implements OnInit {
 
-  @Input() nomeProduto: string = '';
+  @Input() produto: Produto | undefined;
 
   constructor() { }
 

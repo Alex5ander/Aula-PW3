@@ -1,7 +1,5 @@
-<div class="quadrado">
+<img class="quadrado" [src]="produto?.imagem" />
 
-</div>
-
-<p class="m-0">{{ nomeProduto }}</p>
-<p class="m-0 fw-bolder">R$ 60,00</p>
+<p class="m-0">{{ produto?.nome }}</p>
+<p class="m-0 fw-bolder">R$ {{ produto?.preco }}</p>
 <a href="#">Ver produto</a>

@@ -10,15 +10,15 @@
    </div>
 </div>
 
-<div class="container my-5">
-    <div class="d-flex align-items-center justify-content-between">
-        <h4>Star Wars</h4>
+<div class="container my-5" *ngFor="let categoria of categorias">
+    <div class="d-flex align-items-center gap-4">
+        <h4>{{ categoria.nome }}</h4>
         <a href="#" class="nav-link fw-bolder">Ver tudo -></a>
     </div>
 
-    <div class="d-flex justify-content-between">
-        <div *ngFor="let produto of categorias">
-            <app-caixinha nomeProduto="{{produto}}" ></app-caixinha>
+    <div class="d-flex gap-4">
+        <div *ngFor="let produto of categoria.produtos">
+            <app-caixinha [produto]="produto" ></app-caixinha>
         </div>
     </div>
 </div>

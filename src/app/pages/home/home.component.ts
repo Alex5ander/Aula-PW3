@@ -14,7 +14,9 @@ export class HomeComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-   // this.http.get("http://www.lucasreno.kinghost.net/loja/home").subscribe()
+   this.http.get<Categoria[]>("http://www.lucasreno.kinghost.net/loja/home").subscribe(resposta => {
+     this.categorias = resposta;
+   });
   }
 
 }

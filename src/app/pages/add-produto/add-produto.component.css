@@ -1,27 +1,3 @@
-.bg-gray {
-  background-color: #f5f5f5 !important;
-}
-
-.btn-add {
-  background-color: #2a7ae4;
-}
-
-.btn-add:hover {
-  background-color: #5192e7;
-  border-color: #5192e7;
-}
-
-.drop-image {
-  height: 200px;
-  border: 1px dashed gray;
-  text-align: center;
-  color: #909090;
-}
-
-.btn-search-file {
-  border: 1px solid #8fb7ec;
-  border-right-width: 2px;
-  border-bottom-width: 2px;
-  color:#8fb7ec;
-  font-size: 1rem;
+textarea{
+  min-height: 100px;
 }

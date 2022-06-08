@@ -1,11 +1,23 @@
 .hero {
-    padding-top: 120px;
-    padding-bottom: 20px;
+  padding-top: 120px;
+  padding-bottom: 20px;
 }
 
 .bg-hero {
-    background: url('https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80')
+  background: url("https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80")
     center no-repeat #0003;
-    background-size: cover;
-    background-blend-mode: overlay;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.btn-home {
+  background-color: #219ebc;
+  border: 1px solid #219ebc;
+  color: #fff;
+  padding: 10px 15px;
+  transition: 0.2s;
+}
+
+.btn-home:hover {
+  background-color: #42b9d7;
 }

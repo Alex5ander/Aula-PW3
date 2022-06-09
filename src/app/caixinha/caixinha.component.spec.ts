@@ -8,9 +8,8 @@ describe('CaixinhaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CaixinhaComponent ]
-    })
-    .compileComponents();
+      declarations: [CaixinhaComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

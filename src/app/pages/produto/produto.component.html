@@ -14,7 +14,11 @@
   <div class="pt-5"><h4 class="fw-bold">Produtos similares</h4></div>
   <div class="w-100 d-flex justify-content-between">
     <div *ngFor="let produto of produtos">
-      <app-caixinha [produto]="produto" role="button"></app-caixinha>
+      <app-caixinha
+        [produto]="produto"
+        routerLink="/produto/{{ produto.idProduto }}"
+        role="button"
+      ></app-caixinha>
     </div>
   </div>
 </div>

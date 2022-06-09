@@ -16,11 +16,11 @@ export class ProdutoComponent implements OnInit {
   constructor(private route: ActivatedRoute, private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get<Produto[]>(this.urlProdutos).subscribe((produtos) => {
-      this.produtos = produtos;
-    });
-
     this.route.params.subscribe((params) => {
+      this.http.get<Produto[]>(this.urlProdutos).subscribe((produtos) => {
+        this.produtos = produtos;
+      });
+
       this.http.get<Produto[]>(this.url + params['id']).subscribe((produto) => {
         this.produto = produto[0];
       });

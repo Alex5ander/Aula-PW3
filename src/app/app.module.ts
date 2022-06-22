@@ -1,3 +1,4 @@
+import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -25,14 +26,15 @@ import { CaixinhaEdicaoComponent } from './caixinha-edicao/caixinha-edicao.compo
     CatalogoComponent,
     AddProdutoComponent,
     CaixinhaComponent,
-    CaixinhaEdicaoComponent
+    CaixinhaEdicaoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

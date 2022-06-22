@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'catalogo', component: CatalogoComponent },
   { path: 'cadastrar-produto', component: AddProdutoComponent },
+  { path: 'editar-produto/:id', component: AddProdutoComponent },
 ];
 
 @NgModule({

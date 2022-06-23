@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Categoria } from '../../interface/categoria';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-produto',
@@ -21,7 +21,8 @@ export class AddProdutoComponent implements OnInit {
   constructor(
     private http: HttpClient,
     private fb: FormBuilder,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) {
     this.pegarDados();
     this.form = fb.group({
@@ -38,8 +39,7 @@ export class AddProdutoComponent implements OnInit {
     if (this.form.value.id === 0) {
       this.http.post<any>(this.urlPost, this.form.value).subscribe(
         (resposta) => {
-          console.log(resposta);
-          this.form.reset();
+          this.router.navigateByUrl('/catalogo');
         },
         (error) => {
           console.log(error);
@@ -48,8 +48,7 @@ export class AddProdutoComponent implements OnInit {
     } else {
       this.http.put<any>(this.urlPost, this.form.value).subscribe(
         (resposta) => {
-          console.log(resposta);
-          this.form.reset();
+          this.router.navigateByUrl('/catalogo');
         },
         (error) => {
           console.log(error);

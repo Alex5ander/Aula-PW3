@@ -1,6 +1,7 @@
 <div class="container-fluid bg-light py-5">
   <div class="col-5 mx-auto py-5">
-    <h4 class="mb-3 fw-bold">Adicionar novo produto</h4>
+    <h4 class="mb-3 fw-bold" *ngIf="!produto">Adicionar novo produto</h4>
+    <h4 class="mb-3 fw-bold" *ngIf="produto">Editar produto</h4>
     <form [formGroup]="form" (ngSubmit)="enviarDados()">
       <input type="hidden" formControlName="id" />
       <div class="form-floating mb-3 text-secondary">
@@ -54,7 +55,7 @@
         ></textarea>
         <label for="descricao">Descrição do produto</label>
       </div>
-      <button class="btn btn-primary w-100 py-3 rounded-0">
+      <button class="btn btn-custom w-100 py-3 rounded-0">
         Adicionar produto
       </button>
     </form>

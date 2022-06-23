@@ -15,6 +15,8 @@ export class CaixinhaEdicaoComponent implements OnInit {
 
   excluirProduto(idProduto: string) {
     const url = 'http://lucasreno.kinghost.net/loja/produto/' + idProduto;
-    this.http.delete(url).subscribe();
+    this.http.delete(url).subscribe((resposta) => {
+      window.location.reload();
+    });
   }
 }
